@@ -1,0 +1,37 @@
+FUNCTION AddToNumber(x,y)
+	Set C as result
+	C = x+y
+	RETURN C
+ENDFUNCTION
+USAGE
+GET two numbers X,Y
+CALL AddToNumber with x, y RETURN result
+PRINT result
+-----------------------------------------------------
+FUNCTION printsum (set a = 1 till 5)
+For each a
+a = a+1
+end for 
+return a
+ENDFUNCTION
+usage 
+CALL printsum RETURNING result 
+Print result
+-----------------------------------------------------
+FUNCTION AreaOfSquar (side)
+Set area = side* side
+Return area
+ENDFUNCTION
+USAGE
+GET side of squar
+CALL AreaOfSquar RETURNING result 
+PRINT result
+------------------------------------------------------
+FUNCTION AreaOfCircle (radius)
+Set area = (3.14) * radius*radius
+Return area
+ENDFUNCTION
+USAGE
+GET radius of circle 
+CALL AreaOfCircle RETURNING result 
+PRINT result

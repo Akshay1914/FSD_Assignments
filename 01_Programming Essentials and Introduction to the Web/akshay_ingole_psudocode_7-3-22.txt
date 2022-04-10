@@ -1,0 +1,46 @@
+SET A = 10 TILL 20
+FOR EACH A
+A=A+1
+ENDFRO
+PRINT A
+---------------------------------------------------------
+SET A = 10 TILL 25
+SET B = 0
+FOR EACH A
+IF  A IS EVEN
+	B = A+B
+	A = A+2
+ENDIF
+ENDFOR
+PRINT B
+----------------------------------------------------------
+SET A = 1 TILL 15
+SET B = 0
+FOR EACH A
+IF  A IS ODD
+	B = A+B
+	A = A+1
+ENDIF
+ENDFOR
+PRINT B
+----------------------------------------------------------
+GET age 
+IF age is > 18
+PRINT you are deady to vote
+ENDIF
+ELSE IF age is < 18
+PRINT you are small kid
+ENDIF
+----------------------------------------------------------
+GET salary 
+IF salary is > 1000 AND salary is < 2000
+	PRINT you are good 
+ELSE IF salary is > 2100 AND salary is < 3000
+	PRINT YOU ARE SOME HOW IMPROVING
+ELSE IF salary is > 3100 AND salary is < 4000
+	PRINT GOOD SALARY
+ELSE IF salary is > 4100 AND salary is < 5000
+	PRINT VERY GOOD SALARY
+ENDIF	IF	
+------------------------------------------------------------------------------------------------------------------------------------------
+
