@@ -1,6 +1,6 @@
 console.log("Javascript Challenge");
 console.log("Write a program to print triangle of user defined integers sum.");
-let num = 5;
+let num =5;
 console.log(`Number = ${num}`);
 console.log("1=1");
 for(let i=2;i<=num;i++){

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<h1>Registration form</h1>
+<body>
+    <form method="POST" action="google.com">
+        <div>
+            <label for="FullName">Full Name*</label>
+            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required>
+            <input type="text" name="LastName" id="LastName" placeholder="Last Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="Address">Address</label>
+            <textarea name="Address" id="Address" cols="50" rows="5"></textarea>
+ 
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email Address*</label>
+            <input type="email" name="email" id="email" placeholder="Email id." required>
+        </div>
+        <br>
+        <div>
+            <label for="Phone">Phone Number*</label>
+            <input type="text" name="Phone" id="Phone" placeholder="Phone no." required>
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="Female">
+            <label for="female">Female</label>
+        </div>
+        <br>
+        <div>
+            <label for="Hobbies">Hobbies</label>
+            <input type="checkbox" name="Cricket" id="Cricket">
+            <label for="Cricket">Cricket</label>
+            <input type="checkbox" name="Movies" id="Movies">
+            <label for="Movies">Movies</label>
+            <input type="checkbox" name="Singing" id="Singing">
+            <label for="Singing">Singing</label>
+        </div>
+        <br>
+        <div>
+            <label for="Language">Language</label>
+            <input type="text" name="Language" id="Language" list="Languages" placeholder="Select">
+            <datalist id="Languages">
+                <option value="English"/>
+                <option value="Hindi"/>
+                <option value="Spanish"/>
+                <option value="Marathi"/>
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label for="Skill">Skill</label>
+            <input type="text" name="Skill" id="Skill" list="Skills" placeholder="Select">
+            <datalist id="Skills">
+                <option value="C" />
+                <option value="C++" />
+                <option value="JAVA" />
+                <option value="HTML" />
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label for="Country">Country</label>
+            <input type="text" name="Country" id="Country" list="Countries" placeholder="Select">
+            <datalist id="Countries">
+                <option value="India" />
+                <option value="Japan" />
+                <option value="America" />
+                <option value="Russia" />
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" name="DOB" id="DOB">
+        </div>
+        <br>
+        <div>
+            <label for="Password">Password*</label>
+            <input type="password" name="Password" id="Password" required>
+        </div>
+        <br>
+        <div>
+            <label for="con_Password">Confirm Password*</label>
+            <input type="password" name="con_Password" id="con_Password" required>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit">
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+<footer>
+    <h4>All rights reserved</h4>
+</footer>
+</html>
