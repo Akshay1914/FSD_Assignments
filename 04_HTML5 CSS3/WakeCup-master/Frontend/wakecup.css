@@ -1,0 +1,986 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /*font-family: 'Overpass', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.header{
+    width: 100vmax;
+    position: absolute;
+    top: 0px;
+    min-height: 90px;
+    z-index: 1000;
+    background-color: #EFE9CE;
+}
+nav{
+    display: flex;
+    padding-top: 5px 3%;
+    padding-left: 5px;
+    justify-content: center;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    
+}
+.menu ul{
+    margin-right: 3%;
+}
+.menu ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #4c3832;
+    border: 1px transparent;
+    border-radius: 8px;
+    padding: 3px;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    
+}
+.nav_btn:hover{
+    border: 1px solid white;
+    background: white;
+    transition: 1s;
+}
+#logo{
+    width: 160px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+nav .fa-solid{
+    display: none;
+}
+/* footer design--------------------------------------------------------- */
+.footer{
+    width: 100%;
+    background-color: rgba(239, 233, 206, 1);
+    position: fixed;
+    bottom: 0%;
+    display: grid;
+    grid-template-rows: 35px;
+    grid-template-columns: 200px 50px 50px;
+    z-index: 999;
+}
+.footer a{
+    color: #4c3832;
+    font-family: 'Overpass', sans-serif;
+    text-decoration: none;
+    vertical-align:text-bottom;
+}
+.info1{
+    grid-row: 1;
+    grid-column: 1;
+    vertical-align:text-bottom;
+}
+.info1 a{
+    font-size: 12px;
+}
+.social1{
+    grid-row: 1;
+    grid-column: 2;
+    vertical-align:text-bottom;
+}
+.social2{
+    grid-row: 1;
+    grid-column: 3;
+    vertical-align:text-bottom;
+}
+/* about page info---------------------------------------------------------*/
+.about{
+    margin: 4%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    /*border: solid red;*/
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr 1fr;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 20px;
+}
+.pg_name{
+    background-color: transparent;
+    grid-column: 1 /-1;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+}
+.pg_name h1{
+    font-size: 50px;
+    color: white;
+}
+.headline{
+    background-color: rgba(165, 42, 42, 0.5);
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+}
+.headline h1{
+    font-size: 45px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.pg_body{
+    background-color: rgba(165, 42, 42, 0.5);
+    grid-column: 1;
+    grid-row: 3;
+   text-align: left;
+   border-radius: 25px;
+   padding: 20px;
+   color: white;
+}
+.pg_body h1{
+    font-size: 25px;
+}
+.back_video{
+    width: 100vmax;
+    height: 855px;
+    margin: 0px;
+
+}
+/* END about page info---------------------------------------------------------*/
+/* Learn With Us---------------------------------------------------------------*/
+.LearnWithUs{
+    margin: 4%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 10px;
+    background-color: rgba(36, 56, 167, 0.5);
+}
+.LearnWithUs .pg_name{
+    background-color: transparent;
+    grid-column: 1 /-1;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+}
+.LearnWithUs .pg_name h1{
+    font-size: 50px;
+}
+.image img{
+    /*background-color: red;
+    grid-column: 1;
+    grid-row: 2;*/
+    width: 100vmax;
+    height: 855px;
+    margin: 0px;
+ }
+.LearnWithUs .headline{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    border-radius: 25px;
+    padding: 15px;
+    
+}
+.LearnWithUs .headline p{
+    font-size: 30px;
+    padding: 20px;
+    
+}
+.LearnWithUs .pg_body{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 3;
+    text-align: left;
+    border-radius: 25px;
+    padding: 20px;
+}
+.LearnWithUs .pg_body h1{
+    font-size: 25px;
+}
+.LearnWithUs .pg_body .workshop1{
+    width: 90%;
+    background-color: rgba(194, 39, 39, .8);
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid rgba(194, 39, 39, .8);
+}
+.signup_btn:hover{
+    border: 1px solid green;
+    background: green;
+    transition: 1s;
+    padding: 4px;
+    border-radius: 5px;
+}
+.signup_btn {
+    text-decoration: none;
+    background-color: yellow;
+    padding: 6px;
+    border-radius: 5px;
+}
+.LearnWithUs .pg_body .workshop1 ul{
+    list-style: none;
+    position: relative;
+}
+.LearnWithUs .pg_body .workshop1 ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+}
+.LearnWithUs .pg_body .workshop2{
+    width: 90%;
+    background-color: rgba(194, 39, 39, .8);
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid rgba(194, 39, 39, .8);
+}
+.LearnWithUs .pg_body .workshop2 ul{
+    list-style: none;
+    position: relative;
+}
+.LearnWithUs .pg_body .workshop2 ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+}
+/* END Learn With Us-----------------------------------------------------------*/
+/*--The Source----------------------------------------------------------------*/
+.TheSource{
+    margin-top: 1%;
+    margin-left: 4%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 3px;
+}
+.TheSource .pg_name{
+    background-color: transparent;
+    grid-column: 1 /-1;
+    text-align: left;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+.TheSource .pg_name h1{
+    font-size: 50px;
+}
+.TheSource .headline{
+    background-color: rgba(36, 56, 167, 0.5);
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    border-radius: 25px;
+    padding: 15px;
+}
+.TheSource .headline p{
+    font-size: 20px;
+    padding: 10px;
+}
+.TheSource .pg_body{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: left;
+    border-radius: 25px;
+    padding: 20px;
+}
+.TheSource .pg_body h1{
+    font-size: 25px;
+
+}
+.TheSource .pg_body .source1{
+    width: 90%;
+    background-color: rgba(36, 56, 167, 0.5);
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid rgba(36, 56, 167, 0.5);
+}
+.TheSource .pg_body .source2{
+    width: 90%;
+    background-color: rgba(36, 56, 167, 0.5);
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid rgba(36, 56, 167, 0.5);
+}
+.TheSource .pg_body .source3{
+    width: 90%;
+    background-color: rgba(36, 56, 167, 0.5);
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid rgba(36, 56, 167, 0.5);
+}
+
+
+
+
+/*--The Source end------------------------------------------------------------*/
+
+/*--home page---------------------------------------------------------------*/
+.home{
+    margin: 4%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    /*border: solid red;*/
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 100px;
+}
+.home .pg_name{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+.home ul{
+    display: flex;
+    list-style: none;
+
+}
+.home ul li .PageName1{
+    padding: 20px;
+    position: absolute;
+    left: 5%;
+    background-color: rgba(36, 56, 167, 0.5);
+    border-radius: 20px;
+}
+.home ul li .PageName2{
+    padding: 20px;
+    position: absolute;
+    right: 5%;
+    background-color: rgba(36, 56, 167, 0.5);
+    border-radius: 20px;
+}
+
+
+.home .pg_name h1{
+    font-size: 50px;
+    color: white;
+    
+}
+.home .headline{
+    background-color: rgba(165, 42, 42, 0.5);
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    margin: 50px;
+    
+}
+.home .headline h1{
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+
+/*--END home page---------------------------------------------------------------*/
+
+/*product card*/
+.product{
+    position: relative;
+    background-color: lightseagreen;
+    width: 300px;
+    height: 430px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+.item{
+    grid-column: 1;
+    grid-row: 1;
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.product .product_info{
+    position: relative;
+    top: 45%;
+    grid-column: 1;
+    grid-row: 2;
+    list-style: none;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 0px;
+    
+}
+.buy_list {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 0px;
+    position: absolute;
+    top: 70%;
+    padding-left: 5px;
+}
+.buy_list li{
+    display: inline-block;
+    bottom: 0px;
+    left: 0px;
+}
+.buy_list li a{
+    padding: 8px;
+    background-color: yellow;
+    border-radius: 8px;
+    text-decoration: none;
+}
+/*product card end*/
+/*--UNIQUE BLENDS------------------------------------------------------------------*/
+.UniqueBlends{
+    margin: 2%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 10px;
+    background-color: transparent;
+}
+.UniqueBlends .pg_name{
+    background-color: transparent;
+    grid-column: 1 /-1;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px;
+}
+.UniqueBlends .pg_name h1{
+    font-size: 50px;
+    color: #4c3832;
+}
+.UniqueBlends .headline{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    border-radius: 25px;
+    padding: 10px;
+}
+.UniqueBlends .headline p{
+    font-size: 25px;
+    padding: 10px;
+    color: #4c3832;
+}
+.UniqueBlends .pg_body{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 3;
+    text-align: left;
+    border-radius: 25px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+}
+.UniqueBlends .pg_body h1{
+    font-size: 25px;
+}
+.UniqueBlends #cb_ub_1{
+    grid-column: 1;
+    grid-row: 1;
+    left: 50%;
+    transform: translate(-50%);
+}
+.UniqueBlends #cb_ub_2{
+    grid-column: 2;
+    grid-row: 1;
+    left: 50%;
+    transform: translate(-50%);
+}
+.UniqueBlends #cb_ub_3{
+    grid-column: 1;
+    grid-row: 2;
+    left: 50%;
+    transform: translate(-50%);
+}
+.UniqueBlends #cb_ub_4{
+    grid-column: 2;
+    grid-row: 2;
+    left: 50%;
+    transform: translate(-50%);
+}
+.UniqueBlends #cb_ub_5{
+    grid-column: 1;
+    grid-row: 3;
+    left: 50%;
+    transform: translate(-50%);
+}
+.UniqueBlends #cb_ub_6{
+    grid-column: 2;
+    grid-row: 3;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+
+/*--END UNIQUE BLENDS--------------------------------------------------------------*/
+
+/*--Classics------------------------------------------------------------------*/
+.Classics{
+    margin: 2%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr ;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 10px;
+    background-color: transparent;
+}
+.Classics .pg_name{
+    background-color: transparent;
+    grid-column: 1 /-1;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px;
+}
+.Classics .pg_name h1{
+    font-size: 50px;
+    color: #4c3832;
+}
+.Classics .headline{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    border-radius: 25px;
+    padding: 10px;
+}
+.Classics .headline p{
+    font-size: 25px;
+    padding: 10px;
+    color: #4c3832;
+}
+.Classics .pg_body{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 3;
+    text-align: left;
+    border-radius: 25px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+}
+.Classics .pg_body h1{
+    font-size: 25px;
+}
+.Classics #cb_cl_1{
+    grid-column: 1;
+    grid-row: 1;
+    left: 50%;
+    transform: translate(-50%);
+}
+.Classics #cb_cl_2{
+    grid-column: 2;
+    grid-row: 1;
+    left: 50%;
+    transform: translate(-50%);
+}
+.Classics #cb_cl_3{
+    grid-column: 1;
+    grid-row: 2;
+    left: 50%;
+    transform: translate(-50%);
+}
+.Classics #cb_cl_4{
+    grid-column: 2;
+    grid-row: 2;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*--End classic--------------------------------------------------------------*/
+/*--coffee blends-------------------------------------------------------*/
+.CoffeeBlends{
+    margin: 4%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    /*border: solid red;*/
+    position: absolute;
+    z-index: 1;
+}
+.CoffeeBlends .pg_name{
+    background-color: transparent;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+.CoffeeBlends ul{
+    display: flex;
+    list-style: none;
+
+}
+.CoffeeBlends ul li .PageName1{
+    padding: 20px;
+    position: absolute;
+    left: 5%;
+    background-color: rgba(36, 56, 167, 0.5);
+    border-radius: 20px;
+}
+.CoffeeBlends ul li .PageName2{
+    padding: 20px;
+    position: absolute;
+    right: 12%;
+    background-color: rgba(36, 56, 167, 0.5);
+    border-radius: 20px;
+}
+
+
+.CoffeeBlends .pg_name h1{
+    font-size: 50px;
+    color: white;
+    
+}
+#dis1{
+    width: 360px;
+    height: 50px;
+    position: absolute;
+    top: 60%;
+    padding: 2%;
+    left: 8%;
+}
+#dis2{
+    width: 360px;
+    height: 50px;
+    position: absolute;
+    top: 60%;
+    padding: 2%;
+    right: 8%;
+}
+/*--end coffee blends---------------------------------------------------*/
+/*--BrewingEquipment------------------------------------------------------------------*/
+.BrewingEquipment{
+    margin: 2%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr ;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 10px;
+    background-color: transparent;
+}
+.BrewingEquipment .pg_name{
+    background-color: transparent;
+    grid-column: 1 /-1;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px;
+}
+.BrewingEquipment .pg_name h1{
+    font-size: 50px;
+    color: #4c3832;
+}
+.BrewingEquipment .headline{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    border-radius: 25px;
+    padding: 10px;
+}
+.BrewingEquipment .headline p{
+    font-size: 25px;
+    padding: 10px;
+    color: #4c3832;
+}
+.BrewingEquipment .pg_body{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 3;
+    text-align: left;
+    border-radius: 25px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+}
+.BrewingEquipment .pg_body h1{
+    font-size: 25px;
+}
+.BrewingEquipment #cb_cl_1{
+    grid-column: 1;
+    grid-row: 1;
+    left: 50%;
+    transform: translate(-50%);
+}
+.BrewingEquipment #cb_cl_2{
+    grid-column: 2;
+    grid-row: 1;
+    left: 50%;
+    transform: translate(-50%);
+}
+.BrewingEquipment #cb_cl_3{
+    grid-column: 1;
+    grid-row: 2;
+    left: 50%;
+    transform: translate(-50%);
+}
+.BrewingEquipment #cb_cl_4{
+    grid-column: 2;
+    grid-row: 2;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*--End BrewingEquipment--------------------------------------------------------------*/
+
+/*<!--Contact--------------------------------------------------------------->*/
+.Contact{
+    margin: 4%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    /*border: solid red;*/
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr 1fr;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 20px;
+}
+.Contact .pg_name{
+    background-color: transparent;
+    grid-column: 1 /-1;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px;
+}
+.Contact .pg_name h1{
+    font-size: 50px;
+    color: #4c3832;
+}
+.Contact .pg_body{
+    background-color: rgba(165, 42, 42, 0.5);
+    grid-column: 1;
+    grid-row: 3;
+   text-align: left;
+   border-radius: 25px;
+   padding: 50px;
+   color: #4c3832;
+}
+
+
+/*<!--Contact---END------------------------------------------------------------>*/
+
+/*<!--OurCafes---------------------------------------------------------------->*/
+.OurCafes{
+    margin-top: 1%;
+    margin-left: 4%;
+    width: 92%;
+    top: 80px;
+    border-radius: 25px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat 40px 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    grid-gap: 3px;
+}
+.OurCafes .pg_name{
+    background-color: transparent;
+    grid-column: 1 /-1;
+    text-align: left;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+.OurCafes .pg_name h1{
+    font-size: 50px;
+}
+/*.OurCafes .headline{
+    background-color: rgba(36, 56, 167, 0.5);
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    border-radius: 25px;
+    padding: 15px;
+}
+.OurCafes .headline p{
+    font-size: 20px;
+    padding: 10px;
+}*/
+.OurCafes .pg_body{
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: left;
+    border-radius: 25px;
+    padding: 20px;
+}
+.OurCafes .pg_body h1{
+    font-size: 25px;
+
+}
+.OurCafes .pg_body .source1{
+    width: 90%;
+    background-color: rgba(36, 56, 167, 0.5);
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid rgba(36, 56, 167, 0.5);
+}
+.OurCafes .pg_body .source2{
+    width: 90%;
+    background-color: rgba(36, 56, 167, 0.5);
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid rgba(36, 56, 167, 0.5);
+}
+.OurCafes .pg_body .source3{
+    width: 90%;
+    background-color: rgba(36, 56, 167, 0.5);
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border: solid rgba(36, 56, 167, 0.5);
+}
+/*<!--OurCafes-----------END----------------------------------------------------->*/
+
+
+
+
+
+/* for screen size less then 1000px */
+@media (max-width: 1000px){
+    #logo{
+        width: 200px;
+        margin: 0px;
+        padding: 1% 3%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        border-radius: 50px;
+    }
+    .menu ul li{
+        display: block;
+        top: 40px;
+    }
+    .menu{
+        position: absolute;
+        background: rgb(216, 80, 80);
+        height: 100vmax;
+        width: 270px;
+        top: 0;
+        right: -270px;
+        text-align: left;
+        z-index: 4;
+        transition: .2s;
+    }
+    .nav_btn:hover{
+        width: 500px;
+        border: 1px #efe9ce;
+        background: #efe9ce;
+        transition: 1s;
+    }
+    nav .fa-solid.fa-xmark{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+    }
+    nav .fa-solid.fa-bars{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+    }
+    .menu ul{
+        padding: 10px;
+    }
+    .info1 a{
+        font-size: 8px;
+    }
+    /*SMALL ABOUT PAGE*/
+    .pg_name{
+        background-color: transparent;
+        grid-column: 1 /-1;
+        text-align: left;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .pg_name h1{
+        font-size: 40px;
+    }
+    .headline{
+        background-color: rgba(165, 42, 42, 0.5);
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .headline h1{
+        font-size: 35px;
+        padding: 10px;
+    }
+    .pg_body{
+        background-color: rgba(165, 42, 42, 0.5);
+        grid-column: 1;
+        grid-row: 3;
+        text-align: left;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .pg_body h1{
+        font-size: 20px;
+    }
+    .about{
+        grid-gap: 5px;
+    }
+}

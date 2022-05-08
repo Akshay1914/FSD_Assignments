@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WakeCup</title>
+    <link rel="stylesheet" href="wakecup.css">
+</head>
+<body>
+    <video class="back_video" src="images\home_pg.webm" type="webm" autoplay loop></video>
+    <header class="header">
+        <nav>
+            <a href="wakecup.html"><img id="logo" src="images\Logo\WakeCup_400x400.png"></a>
+            <div class="menu" id="menuLink">
+                <ul>
+                    <li><a href="AboutUs.html" class="nav_btn">About Us</a></li>
+                    <li><a href="CoffeeBlends.html" class="nav_btn">Coffee Blends</a></li>
+                    <li><a href="BrewingEquipment.html" class="nav_btn">Brewing Equipment</a></li>
+                    <li><a href="LearnWithUs.html" class="nav_btn">Learn with us</a></li>
+                    <li><a href="Contact.html" class="nav_btn">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-xmark" onclick="menuoff()"></i>
+            </div>
+            <i class="fa-solid fa-bars" onclick="menuon()"></i> 
+        </nav>
+    </header>
+    <section class="page">
+        <!--home page--------------------------------------------------------------->
+        <div class="home">
+            <div class="pg_name">
+                <ul>
+                    <li><a href="OurCafes.html"><h1 class="PageName1">Our Cafes</h1></a></li>
+                    <li><a href="TheSource.html"><h1 class="PageName2">The Sources</h1></a></li>
+                </ul>
+
+            </div>
+            <br><br>
+            <div class="headline">
+                <h1>WakeCup offers some of the finest blends from only the finest and rigorously 
+                    chosen plantations and estates from around the world. Our bouquet of coffee blends keeps 
+                    changing as we traverse the world, looking for great coffee.  </h1>
+            </div>
+            
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="info1"><a href="">Copyright © 2022, Wakecup</a></div>
+            <!--<div class="info2"><a href="">Privacy Policy</a></div>-->
+            <div class="social1"><a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="social2"><a href="twitter.com"><i class="fa-brands fa-twitter"></i></a></div>
+        </div>
+    </footer>
+    
+
+    
+</body>
+<script src="https://kit.fontawesome.com/c67e314d9b.js" crossorigin="anonymous"></script>
+<script>
+    var mlink = document.getElementById("menuLink");
+    function menuon(){
+        mlink.style.right = "0px";
+    }
+    function menuoff(){
+        mlink.style.right = "-270px";
+    }
+</script>
+
+</html>

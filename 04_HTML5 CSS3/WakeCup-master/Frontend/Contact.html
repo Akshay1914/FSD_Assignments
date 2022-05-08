@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WakeCup</title>
+    <link rel="stylesheet" href="wakecup.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav>
+            <a href="wakecup.html"><img id="logo" src="images\Logo\WakeCup_400x400.png"></a>
+            <div class="menu" id="menuLink">
+                <ul>
+                    <li><a href="AboutUs.html" class="nav_btn">About Us</a></li>
+                    <li><a href="CoffeeBlends.html" class="nav_btn">Coffee Blends</a></li>
+                    <li><a href="BrewingEquipment.html" class="nav_btn">Brewing Equipment</a></li>
+                    <li><a href="LearnWithUs.html" class="nav_btn">Learn with us</a></li>
+                    <li><a href="Contact.html" class="nav_btn">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-xmark" onclick="menuoff()"></i>
+            </div>
+            <i class="fa-solid fa-bars" onclick="menuon()"></i> 
+        </nav>
+    </header>
+    <!--<video class="back_video" src="images\Coffee_background.webm" type="webm" autoplay loop></video>-->
+    <section class="page">
+        <!--Contact--------------------------------------------------------------->
+        <div class="Contact">
+            <div class="pg_name">
+                <h1 class="PageName">Contact</h1>
+            </div>
+            <!--<div class="headline">
+                <h1>A spark can start a fire, an idea can start an empire</h1>
+            </div>-->
+            <div class="pg_body">
+                <div class="form">
+                    <table>
+                        <tbody>
+                            <tr>
+                            <td><label for="FullName">Full Name*</label></td>
+                            <td><input type="text" name="FirstName" id="FirstName" placeholder="First Name" required></td>
+                            </tr>
+                            <tr>
+                            <td><label for="Email">Email Address*</label></td>
+                            <td><input type="email" name="email" id="email" placeholder="Email id." required></td>
+                            </tr>
+                            <tr>
+                            <td><label for="Phone">Phone Number*</label></td>
+                            <td><input type="text" name="Phone" id="Phone" placeholder="Phone no." required></td>
+                            </tr>
+                            <tr>
+                            <td><label for="option">Are you interested in<br>partnering with us?</label></td>
+                            <td><input type="radio" name="option" id="Yes">
+                            <label for="Yes">Yes</label>
+                            <input type="radio" name="option" id="No">
+                            <label for="No">No</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="City">City</label></td>
+                                <td>
+                                    <input type="text" name="Language" id="Language" list="Languages" placeholder="Select">
+                                    <datalist id="Delhi">
+                                    <option value="Bangalore"/>
+                                    <option value="Hyderabad"/>
+                                    <option value="Ahmedabad"/>
+                                    <option value="Mumbai"/>
+                                    </datalist>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td><label for="Message">Message</label></td>
+                            <td><textarea name="Message" id="Message" cols="50" rows="5"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="submit"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="info1"><a href="">Copyright © 2022, Wakecup</a></div>
+            <!--<div class="info2"><a href="">Privacy Policy</a></div>-->
+            <div class="social1"><a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="social2"><a href="twitter.com"><i class="fa-brands fa-twitter"></i></a></div>
+        </div>
+    </footer>
+    
+
+    
+</body>
+<script src="https://kit.fontawesome.com/c67e314d9b.js" crossorigin="anonymous"></script>
+<script>
+    var mlink = document.getElementById("menuLink");
+    function menuon(){
+        mlink.style.right = "0px";
+    }
+    function menuoff(){
+        mlink.style.right = "-270px";
+    }
+</script>
+
+</html>

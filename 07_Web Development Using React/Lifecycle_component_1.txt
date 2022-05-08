@@ -1,0 +1,56 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+
+
+class FSD extends React.Component {
+  constructor() {
+    super();
+    this.state = { learning_new: "React",learning_old: "javaScript" };
+  }
+  shouldComponentUpdate() {
+    return true;
+  }
+  change = () => {
+    this.setState({ learning_old: "HTML" });
+  };
+  getSnapshotBeforeUpdate(prevProps, prevState){
+  document.getElementById("b4").innerHTML = "Before the update, learning was " + prevState.learning_old;
+  }
+  componentDidUpdate() {
+    document.getElementById("after").innerHTML = "The updated learning is " + this.state.learning_old;
+  }
+ static getDerivedStateFromProps(props, state) {
+  return { learning_new: props.New};
+  
+ }
+ /*getSnapshotBeforeUpdate(prevProps,prevState){
+    let oldprop=prevState.learning_new;
+
+ }
+ componentDidUpdate() {
+      document.getElementById("l1_after").innerHTML = "line 1  " + this.state.learning_new+" was "+ oldprop;
+    }*/
+
+  render() {
+      return (
+      <div>
+          <div>
+              <h1>I am curently learning {this.state.learning_new}</h1>             
+          </div>
+          <div>
+              <h1>we have already completed the last module named {this.state.learning_old}</h1>
+                <button type="button" onClick={this.change}>
+                Old learning
+                </button>
+            </div>
+            <div>
+                <div id="b4"></div>
+                <div id="after"></div>
+                <div id="l1_after"></div>
+            </div>
+        </div>
+    );
+  }
+}
+ReactDOM.render(<FSD New="React 16"/>, document.getElementById("root"));
